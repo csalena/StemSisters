@@ -1,0 +1,175 @@
+body {
+  background-color: #f0f1f5;
+  color: #141f1b;
+}
+
+#nav-link1,
+#nav-link2,
+#nav-link3,
+#kincsjaro {
+  color: #f0f1f5;
+  text-decoration: none;
+}
+
+#keres {
+  margin-right: 20px;
+}
+
+li {
+  justify-content: space-around;
+  display: flex;
+}
+
+#keres {
+  background-color: #f0f1f5;
+  color: #141f1b;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  align-self: center;
+  width: 250px;
+  min-height: 30px;
+}
+
+#kereses {
+  background-color: #f0f1f5;
+  color: #141f1b;
+  border-radius: none;
+  border: none;
+  height: fit-content;
+}
+
+#kereses:hover {
+  border: none;
+}
+
+#kereses-btn {
+  background-color: #141f1b;
+  color: #f0f1f5;
+  border: 2px #141f1b;
+  border-radius: 12px;
+  height: 25px;
+  max-width: 65px;
+  text-align: center;
+  align-items: center;
+  border-style: none;
+  outline: none;
+  z-index: 100;
+}
+
+#kereses-btn:past {
+  border-style: none;
+  outline: none;
+}
+
+#kereses-btn:hover {
+  cursor: pointer;
+  color: #141f1b;
+  background-color: #f0f1f5;
+  border: 5px #141f1b;
+  border-style: none;
+  outline: none;
+}
+
+nav {
+  color: #f0f1f5;
+  background-color: #141f1b;
+}
+
+nav #menu {
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  min-height: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+#menu ul {
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#menu ul a {
+  justify-content: space-between;
+  display: flex;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#menu input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+@media (max-width: 750px) {
+  #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: visible;
+    display: inline-table;
+    text-align: center;
+    align-items: center;
+  }
+
+  #keres {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 200px;
+    min-height: 30px;
+  }
+
+  #kereses {
+    max-width: 120px;
+  }
+
+  #menu {
+    text-align: center;
+    align-items: center;
+  }
+
+  #menu a {
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  #menu button {
+    margin: 0;
+  }
+
+  #menu input {
+    text-align: start;
+    align-items: center;
+    margin: 0;
+    width: 200px;
+  }
+}
+
+#elso {
+  height: 100vh;
+  background-color: pink;
+}
+
+#regions {
+  height: 100vh;
+  background-color: blue;
+}
+
+footer {
+  background-color: yellow;
+}
