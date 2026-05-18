@@ -94,7 +94,6 @@ nav #menu {
   display: flex;
   text-align: center;
   align-items: center;
-  margin-right: 20px;
 }
 
 #menu ul a {
@@ -160,16 +159,29 @@ nav #menu {
   }
 }
 
-#elso {
+/* sections */
+
+#elso_zold {
   height: 100vh;
-  background-color: pink;
+  background-color: #314e43;
 }
 
 #regions {
   height: 100vh;
-  background-color: blue;
+  background-color: #f0f1f5;
+}
+
+#masodik_zold {
+  height: 100vh;
+  background-color: #3b5e51;
+}
+
+#regions2 {
+  height: 100vh;
+  background-color: #f0f1f5;
 }
 
 footer {
-  background-color: yellow;
+  background-color: #4b7766;
+  height: 100vh;
 }
