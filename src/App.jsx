@@ -1,11 +1,11 @@
+"use client";
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./css/App.css";
+import { Scroll } from "./Scroll";
 
 function App() {
   const [count, setCount] = useState(0);
+  Scroll();
 
   return (
     <div>
@@ -42,7 +42,30 @@ function App() {
           </li>
         </ul>
       </nav>
-      <section id="elso_zold" onScroll="Scroll()"></section>
+      <section id="elso_zold">
+        <h1 id="kincsjaro_cim">Kincsjáró</h1>
+        <div id="zoom_img" data-layer="1">
+          <img src="../balf2.jpeg" alt="balf2" id="balf2" />
+        </div>
+        <div id="zoom_img" data-layer="2">
+          <img src="../cuha_volgy.jpg" alt="cuha" id="cuha" />
+        </div>
+        <div id="zoom_img" data-layer="2">
+          <img src="../pipacsok.jpg" alt="pipacsok" id="pipacsok" />
+        </div>
+        <div id="zoom_img" data-layer="3">
+          <img src="../nagycenk.png" alt="nagycenk" id="nagycenk" />
+        </div>
+        <div id="zoom_img" data-layer="4">
+          <img src="../sopron_atjaro.png" alt="atjaro" id="atjaro" />
+        </div>
+        <div id="zoom_img" data-layer="4">
+          <img src="../balf1.jpeg" alt="balf1" id="balf1" />
+        </div>
+        <div id="zoom_img" data-layer="5">
+          <img src="../soproni_erdo.jpg" alt="sopron" id="sopron" />
+        </div>
+      </section>
       <section id="regions">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -83,8 +106,121 @@ function App() {
   );
 }
 
-let scrollStart = 0;
+// export default function Scroll() {
+//   gsap.registerPlugin(ScrollTrigger);
 
-function Scroll() {}
+//   //    ZoomSection() {
+//   //     const container = useRef(null);
+//   //   }
+//   useEffect(() => {
+//     const ctx = gsap.context(() => {
+//       gsap
+//         .timeline({
+//           scrollTrigger: {
+//             trigger: "#elso_zold",
+//             start: "top top",
+//             end: "+=150%",
+//             pin: true,
+//             scrub: 1,
+//           },
+//         })
+
+//         // layer 5
+//         .to(
+//           ".zoom_img[data-layer='5']",
+//           {
+//             opacity: 1,
+//             z: 1200,
+//             ease: "power1.inOut",
+//           },
+//           0,
+//         )
+
+//         // layer 4
+//         .to(
+//           ".zoom_img[data-layer='4']",
+//           {
+//             opacity: 1,
+//             z: 1000,
+//             ease: "power1.inOut",
+//           },
+//           0,
+//         )
+
+//         // layer 3
+//         .to(
+//           ".zoom_img[data-layer='3']",
+//           {
+//             opacity: 1,
+//             z: 800,
+//             ease: "power1.inOut",
+//           },
+//           0,
+//         )
+
+//         // layer 2
+//         .to(
+//           ".zoom_img[data-layer='2']",
+//           {
+//             opacity: 1,
+//             z: 600,
+//             ease: "power1.inOut",
+//           },
+//           0,
+//         )
+
+//         // layer 1
+//         .to(
+//           ".zoom_img[data-layer='1']",
+//           {
+//             opacity: 1,
+//             z: 400,
+//             ease: "power1.inOut",
+//           },
+//           0,
+//         )
+
+//         // heading
+//         .to(
+//           "#kincsjaro_cim",
+//           {
+//             opacity: 1,
+//             z: 50,
+//             ease: "power1.inOut",
+//           },
+//           0,
+//         );
+//     }, container);
+
+//     return () => ctx.revert();
+//   }, []);
+
+//   return (
+//     <section id="elso_zold">
+//       <h1 id="kincsjaro_cim">Kincsjáró</h1>
+//       <div class="zoom_img" data-layer="1">
+//         <img src="../balf2.jpeg" alt="balf2" class="balf2" />
+//       </div>
+//       <div class="zoom_img" data-layer="2">
+//         <img src="../cuha_volgy.jpg" alt="cuha" class="cuha" />
+//       </div>
+//       <div class="zoom_img" data-layer="2">
+//         <img src="../pipacsok.jpg" alt="pipacsok" class="pipacsok" />
+//       </div>
+//       <div class="zoom_img" data-layer="3">
+//         <img src="../nagycenk.png" alt="nagycenk" class="nagycenk" />
+//       </div>
+//       <div class="zoom_img" data-layer="4">
+//         <img src="../sopron_atjaro.png" alt="atjaro" class="atjaro" />
+//       </div>
+//       <div class="zoom_img" data-layer="4">
+//         <img src="../balf1.jpeg" alt="balf1" class="balf1" />
+//       </div>
+//       <div class="zoom_img" data-layer="5">
+//         <img src="../soproni_erdo.jpg" alt="sopron" class="sopron" />
+//       </div>
+//     </section>
+//   );
+// }
 
 export default App;
