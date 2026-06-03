@@ -28,32 +28,12 @@ export const Scroll = () => {
           scrollTrigger: {
             trigger: "#elso_zold",
             start: "top top",
-            end: "+=100%",
+            end: "+=120%",
+            opacity: 1,
             pin: true,
             scrub: 1,
           },
         })
-        //layer 5
-        .to(
-          "#zoom_img[data-layer='5']",
-          {
-            opacity: 1,
-            z: 1200,
-            ease: "power1.inOut",
-          },
-          0,
-        )
-
-        // layer 4
-        .to(
-          "#zoom_img[data-layer='4']",
-          {
-            opacity: 1,
-            z: 1000,
-            ease: "power1.inOut",
-          },
-          0,
-        )
 
         // layer 3
         .to(
@@ -92,6 +72,11 @@ export const Scroll = () => {
       gsap.to(
         "#kincsjaro_cim",
         {
+          trigger: "#elso_zold",
+          start: "top top",
+          pin: true,
+          scrub: 1,
+          end: "+=120%",
           opacity: 1,
           z: 50,
           ease: "power1.inOut",

@@ -44,25 +44,25 @@ function App() {
       </nav>
       <section id="elso_zold">
         <h1 id="kincsjaro_cim">Kincsjáró</h1>
-        <div id="zoom_img" data-layer="1">
+        <div id="zoom_img" data-layer="3">
           <img src="../balf2.jpeg" alt="balf2" id="balf2" />
         </div>
-        <div id="zoom_img" data-layer="2">
+        <div id="zoom_img" data-layer="1">
           <img src="../cuha_volgy.jpg" alt="cuha" id="cuha" />
         </div>
         <div id="zoom_img" data-layer="2">
           <img src="../pipacsok.jpg" alt="pipacsok" id="pipacsok" />
         </div>
-        <div id="zoom_img" data-layer="3">
+        <div id="zoom_img" data-layer="1">
           <img src="../nagycenk.png" alt="nagycenk" id="nagycenk" />
         </div>
-        <div id="zoom_img" data-layer="4">
+        <div id="zoom_img" data-layer="2">
           <img src="../sopron_atjaro.png" alt="atjaro" id="atjaro" />
         </div>
-        <div id="zoom_img" data-layer="4">
+        <div id="zoom_img" data-layer="3">
           <img src="../balf1.jpeg" alt="balf1" id="balf1" />
         </div>
-        <div id="zoom_img" data-layer="5">
+        <div id="zoom_img" data-layer="2">
           <img src="../soproni_erdo.jpg" alt="sopron" id="sopron" />
         </div>
       </section>
