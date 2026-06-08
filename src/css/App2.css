@@ -1,0 +1,69 @@
+#masodik_zold {
+  min-height: 100vh;
+  background-color: #3b5e51;
+}
+
+#top3 {
+  color: #f0f1f5;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+#card1 {
+  background-color: #f0f1f5;
+  background-repeat: no-repeat;
+  color: #141f1b;
+  border: 2px solid #d6b26f;
+  border-radius: 24px;
+  padding: 9px;
+  width: 340px;
+  height: 540px;
+  overflow: clip;
+  position: relative;
+  margin-top: 90px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#lat_cim1 {
+  font-size: 30.4px;
+  color: #d6b26f;
+  margin-left: 15px;
+}
+
+#leiras1 {
+  margin-left: 15px;
+  color: #141f1b;
+}
+
+#masodik_zold img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  max-width: 100%;
+  transform-origin: center;
+}
+
+#card1:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#regions2 {
+  height: 100vh;
+  background-color: #f0f1f5;
+}
+
+footer {
+  background-color: #4b7766;
+  height: 100vh;
+}

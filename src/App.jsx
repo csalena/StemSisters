@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./css/App.css";
+import "./css/App2.css";
 import { Scroll } from "./Scroll";
 
 function App() {
@@ -15,18 +16,18 @@ function App() {
             <h3 id="kincsjaro">KincsJáró</h3>
           </li>
           <li>
-            <a href="#home" id="nav-link1">
-              Home
+            <a href="#regions" id="nav-link1">
+              Rólunk
             </a>
           </li>
           <li>
-            <a href="#about" id="nav-link2">
-              About
+            <a href="#masodik_zold" id="nav-link2">
+              Top 3
             </a>
           </li>
           <li>
-            <a href="#contact" id="nav-link3">
-              Contact
+            <a href="#regions2" id="nav-link3">
+              Térkép
             </a>
           </li>
           <li>
@@ -43,7 +44,10 @@ function App() {
         </ul>
       </nav>
       <section id="elso_zold">
-        <h1 id="kincsjaro_cim">Kincsjáró</h1>
+        <div id="kincsjaro_cim">
+          <h1>Kincsjáró</h1>
+          <h2 id="arany">Fedezd fel Magyarország rejtett kincseit</h2>
+        </div>
         <div id="zoom_img" data-layer="3">
           <img src="../balf2.jpeg" alt="balf2" id="balf2" />
         </div>
@@ -65,15 +69,44 @@ function App() {
         <div id="zoom_img" data-layer="2">
           <img src="../soproni_erdo.jpg" alt="sopron" id="sopron" />
         </div>
+        <div id="zoom_img" data-layer="3">
+          <img src="../medvehagyma.jpg" alt="medvehagyma" id="medvehagyma" />
+        </div>
+        <div id="zoom_img" data-layer="2">
+          <img src="../szolos.jpg" alt="szolos" id="szolos" />
+        </div>
       </section>
       <section id="regions">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#314E43"
-            fill-opacity="1"
-            d="M0,192L48,186.7C96,181,192,171,288,186.7C384,203,480,245,576,245.3C672,245,768,203,864,192C960,181,1056,203,1152,208C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-          ></path>
-        </svg>
+        <h2 id="mirol_szol">Miről szól a Kincsjáró?</h2>
+        <div id="mirol">
+          <div id="bal_szov">
+            <p>
+              Eleged van a mindig ugyanazokból az úti célokból? A KincsJáró
+              azért született, hogy segítsen felfedezni Magyarország rejtett
+              szépségeit. Olyan természeti és kulturális helyszíneket gyűjtünk
+              össze, amelyek gyakran elkerülik a figyelmet, mégis különleges
+              élményt nyújtanak. Hiszünk abban, hogy minden ösvény egy
+              történetet rejt, és minden táj egy új felfedezés lehetősége.
+            </p>
+            <p>
+              Bemutatjuk Magyarország kevésbé ismert természeti csodáit,
+              történelmi emlékeit és különleges helyszíneit, hogy a következő
+              kaland mindig csak egy kattintásnyira legyen. Célunk, hogy
+              inspirációt adjunk a kirándulásokhoz, és megmutassuk, mennyi
+              felfedezésre váró kincs található körülöttünk.
+            </p>
+            <p>
+              Legyen szó eldugott kirándulóhelyekről vagy lenyűgöző természeti
+              látványosságokról, a KincsJáró új élményekhez és felejthetetlen
+              utakhoz nyújt ötleteket. Magyarország tele van felfedezésre váró
+              kincsekkel. <br />
+              <b id="arany_szov">Mi pedig segítünk megtalálni őket!</b>
+            </p>
+          </div>
+          <div id="jobb_kep">
+            <img src="../rolunk.jpg" alt="rolunk" id="rolunk_kep" />
+          </div>
+        </div>
       </section>
       <section id="masodik_zold">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -83,6 +116,17 @@ function App() {
             d="M0,192L48,192C96,192,192,192,288,213.3C384,235,480,277,576,266.7C672,256,768,192,864,181.3C960,171,1056,213,1152,240C1248,267,1344,277,1392,282.7L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
+        <h2 id="top3">Top 3 legkedveltebb helyek</h2>
+        <article id="card1">
+          <figure>
+            <img src="../nagycenk2.png" alt="nagycenk2" id="nagycenk2" />
+          </figure>
+          <div id="card_text1">
+            <h3 id="lat_cim1">yvxgfcvxv</h3>
+            <p id="leiras1">dddddddfsdgdjufkawzdkvmmdtujhmm</p>
+            <a href="#">Olvasd tovább</a>
+          </div>
+        </article>
       </section>
       <section id="regions2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -105,122 +149,13 @@ function App() {
     </div>
   );
 }
-
-// export default function Scroll() {
-//   gsap.registerPlugin(ScrollTrigger);
-
-//   //    ZoomSection() {
-//   //     const container = useRef(null);
-//   //   }
-//   useEffect(() => {
-//     const ctx = gsap.context(() => {
-//       gsap
-//         .timeline({
-//           scrollTrigger: {
-//             trigger: "#elso_zold",
-//             start: "top top",
-//             end: "+=150%",
-//             pin: true,
-//             scrub: 1,
-//           },
-//         })
-
-//         // layer 5
-//         .to(
-//           ".zoom_img[data-layer='5']",
-//           {
-//             opacity: 1,
-//             z: 1200,
-//             ease: "power1.inOut",
-//           },
-//           0,
-//         )
-
-//         // layer 4
-//         .to(
-//           ".zoom_img[data-layer='4']",
-//           {
-//             opacity: 1,
-//             z: 1000,
-//             ease: "power1.inOut",
-//           },
-//           0,
-//         )
-
-//         // layer 3
-//         .to(
-//           ".zoom_img[data-layer='3']",
-//           {
-//             opacity: 1,
-//             z: 800,
-//             ease: "power1.inOut",
-//           },
-//           0,
-//         )
-
-//         // layer 2
-//         .to(
-//           ".zoom_img[data-layer='2']",
-//           {
-//             opacity: 1,
-//             z: 600,
-//             ease: "power1.inOut",
-//           },
-//           0,
-//         )
-
-//         // layer 1
-//         .to(
-//           ".zoom_img[data-layer='1']",
-//           {
-//             opacity: 1,
-//             z: 400,
-//             ease: "power1.inOut",
-//           },
-//           0,
-//         )
-
-//         // heading
-//         .to(
-//           "#kincsjaro_cim",
-//           {
-//             opacity: 1,
-//             z: 50,
-//             ease: "power1.inOut",
-//           },
-//           0,
-//         );
-//     }, container);
-
-//     return () => ctx.revert();
-//   }, []);
-
-//   return (
-//     <section id="elso_zold">
-//       <h1 id="kincsjaro_cim">Kincsjáró</h1>
-//       <div class="zoom_img" data-layer="1">
-//         <img src="../balf2.jpeg" alt="balf2" class="balf2" />
-//       </div>
-//       <div class="zoom_img" data-layer="2">
-//         <img src="../cuha_volgy.jpg" alt="cuha" class="cuha" />
-//       </div>
-//       <div class="zoom_img" data-layer="2">
-//         <img src="../pipacsok.jpg" alt="pipacsok" class="pipacsok" />
-//       </div>
-//       <div class="zoom_img" data-layer="3">
-//         <img src="../nagycenk.png" alt="nagycenk" class="nagycenk" />
-//       </div>
-//       <div class="zoom_img" data-layer="4">
-//         <img src="../sopron_atjaro.png" alt="atjaro" class="atjaro" />
-//       </div>
-//       <div class="zoom_img" data-layer="4">
-//         <img src="../balf1.jpeg" alt="balf1" class="balf1" />
-//       </div>
-//       <div class="zoom_img" data-layer="5">
-//         <img src="../soproni_erdo.jpg" alt="sopron" class="sopron" />
-//       </div>
-//     </section>
-//   );
-// }
-
+/*
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#314E43"
+            fill-opacity="1"
+            d="M0,192L48,186.7C96,181,192,171,288,186.7C384,203,480,245,576,245.3C672,245,768,203,864,192C960,181,1056,203,1152,208C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+*/
 export default App;

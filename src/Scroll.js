@@ -62,27 +62,27 @@ export const Scroll = () => {
           "#zoom_img[data-layer='1']",
           {
             opacity: 1,
-            z: 400,
+            z: 800,
             ease: "power1.inOut",
             scale: 3.2,
           },
           0,
-        );
+        )
 
-      gsap.to(
-        "#kincsjaro_cim",
-        {
-          trigger: "#elso_zold",
-          start: "top top",
-          pin: true,
-          scrub: 1,
-          end: "+=120%",
-          opacity: 1,
-          z: 50,
-          ease: "power1.inOut",
-        },
-        0,
-      );
+        .to(
+          "#kincsjaro_cim",
+          {
+            trigger: "#elso_zold",
+            start: "top top",
+            pin: true,
+            scrub: 1,
+            end: "+=120%",
+            opacity: 1,
+            z: 50,
+            ease: "power1.inOut",
+          },
+          0,
+        );
     });
 
     return () => ctx.revert();
