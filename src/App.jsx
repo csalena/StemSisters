@@ -117,16 +117,62 @@ function App() {
           ></path>
         </svg>
         <h2 id="top3">Top 3 legkedveltebb helyek</h2>
-        <article id="card1">
-          <figure>
-            <img src="../nagycenk2.png" alt="nagycenk2" id="nagycenk2" />
-          </figure>
-          <div id="card_text1">
-            <h3 id="lat_cim1">yvxgfcvxv</h3>
-            <p id="leiras1">dddddddfsdgdjufkawzdkvmmdtujhmm</p>
-            <a href="#">Olvasd tovább</a>
-          </div>
-        </article>
+        <div id="cards">
+          <article id="card1">
+            <figure>
+              <img src="../nagycenk2.png" alt="nagycenk2" id="nagycenk2" />
+            </figure>
+            <div id="card_text1">
+              <h3 id="lat_cim1">Lorem</h3>
+              <p id="leiras1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore, quisquam vitae? Iusto dolorem consectetur id,
+                voluptatum corrupti doloremque. Corrupti, distinctio nihil.
+                Alias rem nobis cum repellendus sit blanditiis recusandae
+                labore?
+              </p>
+              <a href="#" id="olvasd_tovabb">
+                Olvasd tovább
+              </a>
+            </div>
+          </article>
+          <article id="card2">
+            <figure>
+              <img src="../nagycenk2.png" alt="nagycenk2" id="nagycenk2" />
+            </figure>
+            <div id="card_text1">
+              <h3 id="lat_cim1">Lorem2</h3>
+              <p id="leiras1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore, quisquam vitae? Iusto dolorem consectetur id,
+                voluptatum corrupti doloremque. Corrupti, distinctio nihil.
+                Alias rem nobis cum repellendus sit blanditiis recusandae
+                labore?
+              </p>
+              <a href="#" id="olvasd_tovabb">
+                Olvasd tovább
+              </a>
+            </div>
+          </article>
+          <article id="card3">
+            <figure>
+              <img src="../nagycenk2.png" alt="nagycenk2" id="nagycenk2" />
+            </figure>
+            <div id="card_text1">
+              <h3 id="lat_cim1">Lorem3</h3>
+              <p id="leiras1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore, quisquam vitae? Iusto dolorem consectetur id,
+                voluptatum corrupti doloremque. Corrupti, distinctio nihil.
+                Alias rem nobis cum repellendus sit blanditiis recusandae
+                labore?
+              </p>
+              <a href="#" id="olvasd_tovabb">
+                Olvasd tovább
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
       <section id="regions2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

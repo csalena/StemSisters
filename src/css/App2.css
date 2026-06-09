@@ -10,32 +10,141 @@
   align-items: center;
 }
 
+#cards {
+  justify-content: space-around;
+  display: flex;
+}
+
 #card1 {
+  text-align: center;
+  align-items: center;
   background-color: #f0f1f5;
   background-repeat: no-repeat;
   color: #141f1b;
   border: 2px solid #d6b26f;
   border-radius: 24px;
-  padding: 9px;
+  padding: 9px 9px 25px 9px;
   width: 340px;
-  height: 540px;
-  overflow: clip;
+  max-height: 545px;
+
   position: relative;
   margin-top: 90px;
+  margin-left: 7%;
+  margin-right: 1%;
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.12),
     0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#card1:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#card2 {
+  text-align: center;
+  background-color: #f0f1f5;
+  background-repeat: no-repeat;
+  color: #141f1b;
+  border: 2px solid #d6b26f;
+  border-radius: 24px;
+  padding: 9px 9px 25px 9px;
+  width: 340px;
+  max-height: 540px;
+  overflow: clip;
+  position: relative;
+  margin-top: 90px;
+  margin-left: 1.2%;
+  margin-right: 1.2%;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#card2:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#card3 {
+  text-align: center;
+  background-color: #f0f1f5;
+  background-repeat: no-repeat;
+  color: #141f1b;
+  border: 2px solid #d6b26f;
+  border-radius: 24px;
+  padding: 9px 9px 25px 9px;
+  width: 340px;
+  max-height: 540px;
+  overflow: clip;
+  position: relative;
+  margin-top: 90px;
+  margin-left: 1%;
+  margin-right: 7%;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#card3:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #lat_cim1 {
   font-size: 30.4px;
   color: #d6b26f;
   margin-left: 15px;
+  text-align: start;
 }
 
 #leiras1 {
+  max-height: 270px;
   margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding-right: 0.3%;
   color: #141f1b;
+  text-align: start;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+#leiras1::-webkit-scrollbar {
+  width: 10px;
+}
+
+#leiras1::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+#leiras1::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #3b5e51;
+}
+
+#olvasd_tovabb {
+  text-decoration: none;
+  color: #d6b26f;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#olvasd_tovabb:hover {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-text-stroke: 0.8px #d6b26f;
+  color: #f0f1f5;
 }
 
 #masodik_zold img {
@@ -46,16 +155,9 @@ figure {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 16px 16px 0px 0px;
   max-width: 100%;
   transform-origin: center;
-}
-
-#card1:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 14px 28px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #regions2 {
@@ -66,4 +168,21 @@ figure {
 footer {
   background-color: #4b7766;
   height: 100vh;
+}
+
+@media (max-width: 860px) {
+  #cards {
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
+
+  #card1,
+  #card2 {
+    margin: 50px 0px 0px 0px;
+  }
+
+  #card3 {
+    margin: 50px 0px 20px 0px;
+  }
 }
