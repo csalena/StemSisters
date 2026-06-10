@@ -1,3 +1,13 @@
+body {
+  background-color: #f0f1f5;
+  color: #141f1b;
+  font-family: "Segoe UI", sans-serif;
+}
+
+img {
+  width: 110%;
+}
+
 #masodik_zold {
   min-height: 100vh;
   background-color: #3b5e51;
@@ -158,31 +168,4 @@ figure {
   border-radius: 16px 16px 0px 0px;
   max-width: 100%;
   transform-origin: center;
-}
-
-#regions2 {
-  height: 100vh;
-  background-color: #f0f1f5;
-}
-
-footer {
-  background-color: #4b7766;
-  height: 100vh;
-}
-
-@media (max-width: 860px) {
-  #cards {
-    display: grid;
-    align-items: center;
-    text-align: center;
-  }
-
-  #card1,
-  #card2 {
-    margin: 50px 0px 0px 0px;
-  }
-
-  #card3 {
-    margin: 50px 0px 20px 0px;
-  }
 }

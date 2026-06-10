@@ -1,0 +1,109 @@
+body {
+  background-color: #f0f1f5;
+  color: #141f1b;
+  font-family: "Segoe UI", sans-serif;
+}
+
+img {
+  width: 110%;
+}
+
+#regions {
+  height: auto;
+  background-color: #f0f1f5;
+}
+
+#mirol_szol {
+  color: #141f1b;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#arany_szov {
+  color: #d6b26f;
+}
+
+#mirol {
+  display: flex;
+  align-items: center;
+}
+
+#bal_szov {
+  margin-right: 3%;
+  margin-left: 7%;
+}
+
+#bal_szov p {
+  margin-bottom: 15px;
+  text-align: left;
+
+  margin-top: 40px;
+  width: 45%;
+  width: auto;
+  color: #141f1b;
+}
+
+#jobb_kep {
+  margin-right: 7%;
+  text-align: center;
+  align-items: center;
+}
+
+#rolunk_kep {
+  width: 315px;
+  height: auto;
+  border: 2px solid #d6b26f;
+  border-radius: 20%;
+  text-align: right;
+}
+
+/* a többi külön css-be kerülnek */
+
+@media (max-width: 1000px) {
+  #mirol {
+    display: grid;
+    text-align: center;
+    align-items: center;
+  }
+
+  #bal_szov {
+    margin-left: 7%;
+    margin-right: 7%;
+    width: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  #bal_szov p {
+    margin-bottom: 15px;
+    text-align: left;
+    width: auto;
+    margin-top: 0;
+  }
+
+  #mirol img {
+    text-align: center;
+    align-items: center;
+  }
+
+  #jobb_kep {
+    margin: 0;
+  }
+
+  #rolunk_kep {
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  p {
+    font-size: large;
+  }
+}

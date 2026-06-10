@@ -1,0 +1,14 @@
+body {
+  background-color: #f0f1f5;
+  color: #141f1b;
+  font-family: "Segoe UI", sans-serif;
+}
+
+img {
+  width: 110%;
+}
+
+footer {
+  background-color: #4b7766;
+  height: 100vh;
+}
