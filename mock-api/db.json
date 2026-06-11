@@ -1,0 +1,81 @@
+{
+  "topPlaces": [
+    {
+      "id": "nagycenk",
+      "name": "Nagycenki horgaszto",
+      "portrayal": "A nagycenki horgaszto nem csupan a sporthorgaszok paradicsoma, hanem a termeszetkedvelo csaladok tokeletes kirandulohelye is.",
+      "image": "/nagycenk2.png",
+      "href": "#"
+    },
+    {
+      "id": "sopron-atjaro",
+      "name": "Soproni titkos atjaro",
+      "portrayal": "Sopron belvarosaban talalhato ez a hangulatos atjaro, ahol a Zwinger Kavehaz es a Forum Pizzeria is varja a latogatokat.",
+      "image": "/sopron_atjaro2.png",
+      "href": "#"
+    },
+    {
+      "id": "balf-szolos",
+      "name": "Balfi szolos",
+      "portrayal": "Balfon egy domboldalon setalva gyonyoru kilatas nyilik a Fertotora, ami kulonleges elmenyt ad minden evszakban.",
+      "image": "/balf2.jpeg",
+      "href": "#"
+    }
+  ],
+  "heroImages": [
+    {
+      "id": "balf2",
+      "layer": 3,
+      "src": "/balf2.jpeg",
+      "alt": "Balfi taj"
+    },
+    {
+      "id": "cuha",
+      "layer": 1,
+      "src": "/cuha_volgy.jpg",
+      "alt": "Cuha-volgy"
+    },
+    {
+      "id": "pipacsok",
+      "layer": 2,
+      "src": "/pipacsok.jpg",
+      "alt": "Pipacsos mezo"
+    },
+    {
+      "id": "nagycenk",
+      "layer": 1,
+      "src": "/nagycenk.png",
+      "alt": "Nagycenk"
+    },
+    {
+      "id": "atjaro",
+      "layer": 2,
+      "src": "/sopron_atjaro.png",
+      "alt": "Soproni atjaro"
+    },
+    {
+      "id": "balf1",
+      "layer": 3,
+      "src": "/balf1.jpeg",
+      "alt": "Balfi taj"
+    },
+    {
+      "id": "sopron",
+      "layer": 2,
+      "src": "/soproni_erdo.jpg",
+      "alt": "Soproni erdo"
+    },
+    {
+      "id": "medvehagyma",
+      "layer": 3,
+      "src": "/medvehagyma.jpg",
+      "alt": "Medvehagyma"
+    },
+    {
+      "id": "szolos",
+      "layer": 2,
+      "src": "/szolos.jpg",
+      "alt": "Szolos"
+    }
+  ]
+}
