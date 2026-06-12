@@ -3,8 +3,12 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export const Scroll = () => {
+export const Scroll = (isReady) => {
   useEffect(() => {
+    if (!isReady) {
+      return;
+    }
+
     gsap.registerPlugin(ScrollTrigger);
 
     // const ctx = gsap.context(() => {
@@ -86,5 +90,5 @@ export const Scroll = () => {
     });
 
     return () => ctx.revert();
-  }, []);
+  }, [isReady]);
 };

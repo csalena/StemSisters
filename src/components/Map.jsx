@@ -1,18 +1,27 @@
 "use client";
-import { useState } from "react";
 import "../css/Map.css";
+import { useApiResource } from "../hooks/useApiResource";
 
 function Map() {
-  const [count, setCount] = useState(0);
+  const { data, loading, error } = useApiResource("/api/map");
+  const mapData = data[0];
+
+  if (loading || !mapData) {
+    return null;
+  }
+
+  if (error) {
+    return null;
+  }
 
   return (
     <div>
-      <section id="regions2">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <section id={mapData.sectionId}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox={mapData.wave?.viewBox}>
           <path
-            fill="#3b5e51"
-            fill-opacity="1"
-            d="M0,160L48,160C96,160,192,160,288,165.3C384,171,480,181,576,197.3C672,213,768,235,864,234.7C960,235,1056,213,1152,192C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+            fill={mapData.wave?.fill}
+            fillOpacity="1"
+            d={mapData.wave?.path}
           ></path>
         </svg>
       </section>

@@ -1,0 +1,178 @@
+{
+	"nav": [
+    
+		{
+			"brand": "KincsJáró",
+			"links": [
+				{
+					"label": "Rólunk",
+					"href": "#regions",
+					"id": "nav-link1"
+				},
+				{
+					"label": "Top 3",
+					"href": "#masodik_zold",
+					"id": "nav-link2"
+				},
+				{
+					"label": "Térkép",
+					"href": "#regions2",
+					"id": "nav-link3"
+				}
+			],
+			"search": {
+				"placeholder": "Search..",
+				"buttonLabel": "Keresés"
+			}
+		}
+	],
+	"scroll": [
+		{
+			"title": "Kincsjáró",
+			"subtitle": "Fedezd fel Magyarország rejtett kincseit",
+			"images": [
+				{
+					"src": "../balf2.jpeg",
+					"alt": "balf2",
+					"id": "balf2",
+					"layer": 3
+				},
+				{
+					"src": "../cuha_volgy.jpg",
+					"alt": "cuha",
+					"id": "cuha",
+					"layer": 1
+				},
+				{
+					"src": "../pipacsok.jpg",
+					"alt": "pipacsok",
+					"id": "pipacsok",
+					"layer": 2
+				},
+				{
+					"src": "../nagycenk.png",
+					"alt": "nagycenk",
+					"id": "nagycenk",
+					"layer": 1
+				},
+				{
+					"src": "../sopron_atjaro.png",
+					"alt": "atjaro",
+					"id": "atjaro",
+					"layer": 2
+				},
+				{
+					"src": "../balf1.jpeg",
+					"alt": "balf1",
+					"id": "balf1",
+					"layer": 3
+				},
+				{
+					"src": "../soproni_erdo.jpg",
+					"alt": "sopron",
+					"id": "sopron",
+					"layer": 2
+				},
+				{
+					"src": "../medvehagyma.jpg",
+					"alt": "medvehagyma",
+					"id": "medvehagyma",
+					"layer": 3
+				},
+				{
+					"src": "../szolos.jpg",
+					"alt": "szolos",
+					"id": "szolos",
+					"layer": 2
+				}
+			]
+		}
+	],
+	"rolunk": [
+		{
+			"title": "Miről szól a Kincsjáró?",
+			"paragraphs": [
+				"Eleged van a mindig ugyanazokból az úti célokból? A KincsJáró azért született, hogy segítsen felfedezni Magyarország rejtett szépségeit. Olyan természeti és kulturális helyszíneket gyűjtünk össze, amelyek gyakran elkerülik a figyelmet, mégis különleges élményt nyújtanak. Hiszünk abban, hogy minden ösvény egy történetet rejt, és minden táj egy új felfedezés lehetősége.",
+				"Bemutatjuk Magyarország kevésbé ismert természeti csodáit, történelmi emlékeit és különleges helyszíneit, hogy a következő kaland mindig csak egy kattintásnyira legyen. Célunk, hogy inspirációt adjunk a kirándulásokhoz, és megmutassuk, mennyi felfedezésre váró kincs található körülöttünk.",
+				"Legyen szó eldugott kirándulóhelyekről vagy lenyűgöző természeti látványosságokról, a KincsJáró új élményekhez és felejthetetlen utakhoz nyújt ötleteket. Magyarország tele van felfedezésre váró kincsekkel. Mi pedig segítünk megtalálni őket!"
+			],
+			"image": {
+				"src": "../rolunk.jpg",
+				"alt": "rolunk",
+				"id": "rolunk_kep"
+			},
+			"highlight": "Mi pedig segítünk megtalálni őket!"
+		}
+	],
+	"tops": [
+		{
+			"sectionTitle": "Top 3 legkedveltebb helyek",
+			"cards": [
+				{
+					"id": "card1",
+					"title": "Lorem",
+					"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quisquam vitae? Iusto dolorem consectetur id, voluptatum corrupti doloremque. Corrupti, distinctio nihil. Alias rem nobis cum repellendus sit blanditiis recusandae labore?",
+					"image": "../nagycenk2.png",
+					"imageAlt": "nagycenk2",
+					"ctaLabel": "Olvasd tovább",
+					"ctaHref": "#"
+				},
+				{
+					"id": "card2",
+					"title": "Lorem2",
+					"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quisquam vitae? Iusto dolorem consectetur id, voluptatum corrupti doloremque. Corrupti, distinctio nihil. Alias rem nobis cum repellendus sit blanditiis recusandae labore?",
+					"image": "../nagycenk2.png",
+					"imageAlt": "nagycenk2",
+					"ctaLabel": "Olvasd tovább",
+					"ctaHref": "#"
+				},
+				{
+					"id": "card3",
+					"title": "Lorem3",
+					"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quisquam vitae? Iusto dolorem consectetur id, voluptatum corrupti doloremque. Corrupti, distinctio nihil. Alias rem nobis cum repellendus sit blanditiis recusandae labore?",
+					"image": "../nagycenk2.png",
+					"imageAlt": "nagycenk2",
+					"ctaLabel": "Olvasd tovább",
+					"ctaHref": "#"
+				}
+			]
+		}
+	],
+	"places": [
+		{
+			"name": "Nagycenki horgásztó",
+			"portrayal": "A nagycenki horgásztó nem csupán a sporthorgászok paradicsoma, hanem a természetkedvelő családok tökéletes kirándulóhelye is.",
+			"img": "../nagycenk2.png"
+		},
+		{
+			"name": "Soproni titkos átjáró",
+			"portrayal": "Sopron belvárosában található, egy kis cuki átjáró. Az átjáróban található a Zwinger Kávéház és a Fórum Pizzéria.",
+			"img": "../sopron_atjaro2"
+		},
+		{
+			"name": "Balfi szőlős",
+			"portrayal": "Balfon található egy kis domboldal, ahol általában szőlőt termesztenek. A domb tetején elképesztő kilátás tárul a Fertőtóra.",
+			"img": "../balf2.jpeg"
+		}
+	],
+	"map": [
+		{
+			"sectionId": "regions2",
+			"wave": {
+				"viewBox": "0 0 1440 320",
+				"fill": "#3b5e51",
+				"path": "M0,160L48,160C96,160,192,160,288,165.3C384,171,480,181,576,197.3C672,213,768,235,864,234.7C960,235,1056,213,1152,192C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+			}
+		}
+	],
+	"footer": [
+		{
+			"sectionId": "footer",
+			"wave": {
+				"viewBox": "0 0 1440 320",
+				"fill": "#f0f1f5",
+				"path": "M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,112C672,96,768,96,864,117.3C960,139,1056,181,1152,176C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+			}
+		}
+	]
+}

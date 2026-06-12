@@ -1,41 +1,42 @@
 "use client";
-import { useState } from "react";
 import "../css/Nav.css";
+import { useApiResource } from "../hooks/useApiResource";
 
 function Nav() {
-  const [count, setCount] = useState(0);
+  const { data, loading, error } = useApiResource("/api/nav");
+  const nav = data[0];
+
+  if (loading || !nav) {
+    return null;
+  }
+
+  if (error) {
+    return null;
+  }
 
   return (
     <div>
       <nav id="menu">
         <ul>
           <li>
-            <h3 id="kincsjaro">KincsJáró</h3>
+            <h3 id="kincsjaro">{nav.brand}</h3>
           </li>
-          <li>
-            <a href="#regions" id="nav-link1">
-              Rólunk
-            </a>
-          </li>
-          <li>
-            <a href="#masodik_zold" id="nav-link2">
-              Top 3
-            </a>
-          </li>
-          <li>
-            <a href="#regions2" id="nav-link3">
-              Térkép
-            </a>
-          </li>
+          {nav.links?.map((link) => (
+            <li key={link.id}>
+              <a href={link.href} id={link.id}>
+                {link.label}
+              </a>
+            </li>
+          ))}
           <li>
             <div id="keres">
               <input
                 type="search"
                 name="kereses"
                 id="kereses"
-                placeholder="Search.."
+                placeholder={nav.search?.placeholder}
               ></input>
-              <button id="kereses-btn">Keresés</button>
+              <button id="kereses-btn">{nav.search?.buttonLabel}</button>
             </div>
           </li>
         </ul>
