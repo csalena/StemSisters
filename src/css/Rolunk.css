@@ -22,7 +22,7 @@ img {
   margin-bottom: 60px;
   animation: bounce;
   animation-duration: 2s;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 #arany_szov {
