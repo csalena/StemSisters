@@ -13,13 +13,16 @@ img {
   background-color: #f0f1f5;
 }
 
-#mirol_szol {
+.mirol_szol {
   color: #141f1b;
   font-size: 40px;
   text-align: center;
   align-items: center;
   margin-top: 60px;
   margin-bottom: 60px;
+  animation: bounce;
+  animation-duration: 2s;
+  opacity: 0;
 }
 
 #arany_szov {
@@ -97,7 +100,7 @@ img {
     margin-top: 15px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 300px;
+    width: 280px;
     height: auto;
   }
 }
@@ -105,5 +108,11 @@ img {
 @media (min-width: 1280px) {
   p {
     font-size: large;
+  }
+}
+
+@media (max-width: 415px) {
+  #rolunk_kep {
+    width: 65%;
   }
 }
