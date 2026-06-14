@@ -31,7 +31,7 @@
       "subtitle": "Fedezd fel Magyarország rejtett kincseit",
       "images": [
         {
-          "src": "../balf2.jpeg",
+          "src": "../balf2.png",
           "alt": "balf2",
           "id": "balf2",
           "layer": 3
@@ -129,7 +129,7 @@
           "id": "card3",
           "title": "Balfi szőlős",
           "description": "Balfon található egy kis domboldal, ahol általában szőlőt termesztenek. A domb tetején elképesztő kilátás tárul a Fertőtóra.",
-          "image": "../balf2.jpeg",
+          "image": "../balf2.png",
           "imageAlt": "balf2",
           "ctaLabel": "Olvasd tovább",
           "ctaHref": "#"
