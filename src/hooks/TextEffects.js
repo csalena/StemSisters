@@ -1,46 +1,30 @@
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { GSDevTools } from "gsap/GSDevTools";
-// import { SplitText } from "gsap/SplitText";
+export function Texteffect() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log(document.querySelectorAll(".animate-on-scroll"));
+          entry.target.classList.add("animate__animated", "animate__fadeInUp");
 
-// gsap.registerPlugin(GSDevTools, SplitText);
+          entry.target.style.opacity = "1";
+        } else {
+          console.log("Mennek");
+          console.log(document.querySelectorAll(".animate-on-scroll"));
+          entry.target.classList.remove(
+            "animate__animated",
+            "animate__fadeInUp",
+          );
 
-// gsap.registerEffect({
-//   name: "textInsertion",
-//   effect: (targets, config) => {
-//     return gsap.from(targets, { opacity: 0, y: -100 });
-//   },
-// });
+          entry.target.style.opacity = "0";
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    },
+  );
 
-// function init() {
-//   gsap.set("#regions", { autoAlpha: 1 });
-
-//   gsap.effects.textInsertion("h2");
-
-//   GSDevTools.create({});
-// }
-
-// export default init;
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate__animated", "animate__fadeInUp");
-
-        entry.target.style.opacity = "1";
-      } else {
-        entry.target.classList.remove("animate__animated", "animate__fadeInUp");
-
-        entry.target.style.opacity = "0";
-      }
-    });
-  },
-  {
-    threshold: 0.3,
-  },
-);
-
-document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-  observer.observe(el);
-});
+  document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+    observer.observe(el);
+  });
+}

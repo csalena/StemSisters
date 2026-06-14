@@ -20,8 +20,6 @@ img {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 60px;
-  animation: bounce;
-  animation-duration: 2s;
   opacity: 0;
 }
 

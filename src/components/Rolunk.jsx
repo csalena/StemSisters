@@ -1,12 +1,17 @@
 "use client";
-import "../css/Rolunk.css";
 import "animate.css";
-import "../hooks/TextEffects.js";
+import "../css/Rolunk.css";
+import { Texteffect } from "../hooks/TextEffects.js";
 import { useApiResource } from "../hooks/useApiResource";
+import { useEffect } from "react";
 
 function Rolunk() {
   const { data, loading, error } = useApiResource("/api/rolunk");
   const about = data[0];
+
+  useEffect(() => {
+    return Texteffect();
+  });
 
   if (loading || !about) {
     return null;
@@ -19,7 +24,7 @@ function Rolunk() {
   return (
     <div>
       <section id="regions">
-        <h2 class="mirol_szol">{about.title}</h2>
+        <h2 class="mirol_szol animate-on-scroll">{about.title}</h2>
         <div id="mirol">
           <div id="bal_szov">
             {about.paragraphs?.map((text, index) => (
